@@ -1,6 +1,13 @@
 """Streamlit Interactive Web Application for Weather Pattern Clustering and Climate Insights."""
 
+import sys
 from pathlib import Path
+
+# Ensure project root is in sys.path regardless of how Streamlit is launched
+project_root = Path(__file__).resolve().parent.parent
+if str(project_root) not in sys.path:
+    sys.path.insert(0, str(project_root))
+
 from typing import Dict, Tuple
 
 import matplotlib.pyplot as plt
@@ -88,10 +95,10 @@ def load_model_and_metadata():
     from src.train import train_and_select_champion
     from src.utils import load_artifact, load_json
 
-    model_path = Path("models/kmeans_champion.joblib")
-    profiles_path = Path("models/cluster_profiles.json")
-    metrics_path = Path("models/training_metrics.json")
-    data_path = Path("data/processed/processed_weather_data.csv")
+    model_path = project_root / "models" / "kmeans_champion.joblib"
+    profiles_path = project_root / "models" / "cluster_profiles.json"
+    metrics_path = project_root / "models" / "training_metrics.json"
+    data_path = project_root / "data" / "processed" / "processed_weather_data.csv"
 
     if not model_path.exists() or not profiles_path.exists():
         train_and_select_champion()
