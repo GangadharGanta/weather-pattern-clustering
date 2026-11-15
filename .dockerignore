@@ -1,0 +1,9 @@
+.git
+.github
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.zip
+data/raw/
+.DS_Store
