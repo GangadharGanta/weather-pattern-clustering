@@ -218,3 +218,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# Project Specific Ignores
+data/raw/
+venv/
+.pytest_cache/

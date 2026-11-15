@@ -1,0 +1,5 @@
+Project Title: Weather Pattern Clustering for Localised Climate Insight Generation
+Problem Statement ID: 31
+Registration Numbers of All Group Members: 12523695
+GitHub Repository Link: https://github.com/GangadharGanta/weather-pattern-clustering
+Live Deployed Project Link: https://weather-pattern-clustering.streamlit.app
