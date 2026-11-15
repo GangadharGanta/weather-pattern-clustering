@@ -1,0 +1,84 @@
+{
+    "champion_algorithm": "K-Means",
+    "optimal_k": 5,
+    "features_used": [
+        "Temperature",
+        "Humidity",
+        "Wind_Speed",
+        "Pressure",
+        "Precipitation"
+    ],
+    "kmeans_metrics": {
+        "silhouette_score": 0.4688,
+        "calinski_harabasz": 1733.48,
+        "davies_bouldin": 0.7782,
+        "inertia": 1899.02
+    },
+    "agglomerative_metrics": {
+        "silhouette_score": 0.4651,
+        "calinski_harabasz": 1679.64,
+        "davies_bouldin": 0.7844
+    },
+    "dbscan_metrics": {
+        "silhouette_score": 0.0,
+        "n_clusters_discovered": 1,
+        "noise_points": 47,
+        "noise_ratio": 0.0257
+    },
+    "hyperparameter_search": [
+        {
+            "k": 2,
+            "wcss": 5329.73,
+            "silhouette_score": 0.5207,
+            "calinski_harabasz": 1300.57,
+            "davies_bouldin": 0.8126
+        },
+        {
+            "k": 3,
+            "wcss": 3731.92,
+            "silhouette_score": 0.3949,
+            "calinski_harabasz": 1318.45,
+            "davies_bouldin": 0.8984
+        },
+        {
+            "k": 4,
+            "wcss": 2402.88,
+            "silhouette_score": 0.478,
+            "calinski_harabasz": 1700.3,
+            "davies_bouldin": 0.8048
+        },
+        {
+            "k": 5,
+            "wcss": 1899.02,
+            "silhouette_score": 0.4688,
+            "calinski_harabasz": 1733.48,
+            "davies_bouldin": 0.7782
+        },
+        {
+            "k": 6,
+            "wcss": 1545.35,
+            "silhouette_score": 0.4715,
+            "calinski_harabasz": 1786.53,
+            "davies_bouldin": 0.8271
+        },
+        {
+            "k": 7,
+            "wcss": 1433.91,
+            "silhouette_score": 0.3982,
+            "calinski_harabasz": 1627.17,
+            "davies_bouldin": 0.9574
+        },
+        {
+            "k": 8,
+            "wcss": 1334.67,
+            "silhouette_score": 0.3818,
+            "calinski_harabasz": 1516.89,
+            "davies_bouldin": 1.1236
+        }
+    ],
+    "pca_variance_ratio": {
+        "pc1": 0.5418,
+        "pc2": 0.2391,
+        "cumulative": 0.7809
+    }
+}
