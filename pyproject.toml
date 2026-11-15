@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "weather-pattern-clustering"
+version = "1.0.0"
+description = "Weather Pattern Clustering for Localised Climate Insight Generation (INT396 Problem Statement 31)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Ganta Gangadhar", email = "12523695@lpu.in" }
+]
+keywords = [
+    "unsupervised-learning",
+    "clustering",
+    "k-means",
+    "pca",
+    "climate-insights",
+    "streamlit",
+    "meteorology"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Atmospheric Science",
+]
+
+[project.urls]
+Homepage = "https://weather-pattern-clustering.streamlit.app"
+Repository = "https://github.com/GangadharGanta/weather-pattern-clustering"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+]
