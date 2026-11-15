@@ -224,3 +224,4 @@ __marimo__/
 data/raw/
 venv/
 .pytest_cache/
+*.zip
